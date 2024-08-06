@@ -1,0 +1,21 @@
+class Rectangle {
+    private double length;
+    private double width;
+    
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+    
+    public double calculateArea() {
+        return length * width;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Rectangle rect = new Rectangle(5, 3);
+        double area = rect.calculateArea();
+        System.out.println("Area of the rectangle: " + area);
+    }
+}
